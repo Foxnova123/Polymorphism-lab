@@ -5,4 +5,4 @@ Create a class MathOperations, which should have 3 times method Add(). Method Ad
 •	Add(double, double, double): double</br>
 •	Add(decimal, decimal, decimal): decimal</br>
 Result
-![TestOperation](./TestOperations "Logo Operation 1")
+![TestOperation](./img/TestOperations "Logo Operation 1")

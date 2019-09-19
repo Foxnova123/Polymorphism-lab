@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PolymorphismLab
+namespace Operations
 {
     class Program
     {
@@ -34,3 +34,4 @@ namespace PolymorphismLab
         }
     }
 }
+

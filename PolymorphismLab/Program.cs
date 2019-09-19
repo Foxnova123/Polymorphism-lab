@@ -34,4 +34,55 @@ namespace Operations
         }
     }
 }
+namespace Animals
+{
+    public class Animal
+    {
+        private string name;
+        private string favoriteFood;
+        
+        public Animal(string name,string favoriteFood)
+        {
+            this.name = name;
+            this.favoriteFood = favoriteFood;
+        }
+        public virtual string ExplainSelf()
+        {
+            return $"I am{this.name}and my favoriteFood is {this.favoriteFood}";
+        }
+    }
+    public class Cat : Animal
+    {
+        public Cat(string name, string favoriteFood)
+            : base(name, favoriteFood)
+        {
 
+        }
+        public override string ExplainSelf()
+        {
+            var builder = new StringBuilder();
+
+            builder.AppendLine(base.ExplainSelf())
+                .Append("MEEOW");
+
+            return builder.ToString();
+        }
+    }
+    public class Dog : Animal
+    {
+        public Dog(string name, string favouriteFood)
+    : base(name, favouriteFood)
+        {
+        }
+
+        public override string ExplainSelf()
+        {
+            var builder = new StringBuilder();
+
+            builder.AppendLine(base.ExplainSelf())
+                .Append("DJAAF");
+
+            return builder.ToString();
+        }
+    }
+}
